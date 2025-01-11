@@ -79,6 +79,21 @@ body {
   nav a:hover {
     text-decoration:overline;
   }
+  .open a {
+    display: block;
+  }
+  .active::before { 
+    content: "📍";  /* just a wayfinding symbol for the user */
+  }
+  
+  .stuff {
+    margin: 0.5m;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+  }
+  
   
   .active {
     color: yellow;
@@ -99,8 +114,11 @@ body {
   .show li {
     display: block;
   }
-
   #menu.show::before {
+    content: "X";
+  }
+
+  #menu.open::before {
     content: "X";
   }
   
@@ -186,13 +204,6 @@ body {
     border-bottom: 5px;
     border-top: 5px;
   }
-  /*this is a responsive 'Hamburger Menu code below*/
-  
-  
-  /* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
-  
-  In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
-  */
   
   
   /* Larger Views ******************************/
@@ -201,6 +212,7 @@ body {
       display: flex;
     }
     nav ul li {
+      display: block;
       flex: 1 1 100%;
     }
 
