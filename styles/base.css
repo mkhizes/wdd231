@@ -179,7 +179,7 @@ body {
       color: #fff;
       width: 450px;
       height:100px;
-    }
+     }
     
     #cse210,#wdd231{
       color: black;
@@ -188,6 +188,11 @@ body {
       width: 450px;
       height: 100px;
 
+    }
+    .modules{
+      display: flex;
+      justify-content: space-around;
+      
     }
   
   footer{
