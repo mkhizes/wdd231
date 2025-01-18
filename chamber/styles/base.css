@@ -56,12 +56,14 @@ ul.menuLinks.open{
 	display: flex;
 	justify-content: space-between;
 	align-items: last baseline;
-	box-sizing: 15px;
+	box-sizing:content-box;
 }
+
 #businesscard{
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	box-sizing:content-box;
 }
 footer{
 	display: flex;
