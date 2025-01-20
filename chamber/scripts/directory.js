@@ -16,3 +16,17 @@ function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
 }
+// Display the copyright year and last modification date in the footer.
+function displayFooterInfo() {
+	const footer = document.getElementById('footer');
+	const currentYear = new Date().getFullYear();
+	const lastModified = document.lastModified;
+  
+	footer.innerHTML = `
+	  <p>&copy; ${currentYear} Your Company Name. All rights reserved.</p>
+	  <p>Last Modified: ${lastModified}</p>
+	`;
+  }
+  
+  displayFooterInfo();
+  

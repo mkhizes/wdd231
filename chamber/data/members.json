@@ -1,1 +1,66 @@
-[]
+
+const "members":[
+    {
+      "name": "Tech Innovators",
+      "address": "123 Innovation Drive, Tech City",
+      "phone": "123-456-7890",
+      "website": "https://www.techinnovators.com",
+      "image": "tech_innovators.png",
+      "membershipLevel": 3,
+      "description": "Leading innovators in the tech industry."
+    },
+    {
+      "name": "Eco Solutions",
+      "address": "456 Green Way, Sustainville",
+      "phone": "234-567-8901",
+      "website": "https://www.ecosolutions.com",
+      "image": "eco_solutions.png",
+      "membershipLevel": 2,
+      "description": "Providing sustainable energy solutions."
+    },
+    {
+      "name": "Creative Minds",
+      "address": "789 Inspiration Blvd, Creativetown",
+      "phone": "345-678-9012",
+      "website": "https://www.creativeminds.com",
+      "image": "creative_minds.png",
+      "membershipLevel": 1,
+      "description": "Innovative marketing and design services."
+    },
+    {
+      "name": "Finance First",
+      "address": "321 Wealth Street, Economica",
+      "phone": "456-789-0123",
+      "website": "https://www.financefirst.com",
+      "image": "finance_first.png",
+      "membershipLevel": 3,
+      "description": "Experts in financial planning and investment."
+    },
+    {
+      "name": "Health Hub",
+      "address": "654 Wellness Road, Healthcity",
+      "phone": "567-890-1234",
+      "website": "https://www.healthhub.com",
+      "image": "health_hub.png",
+      "membershipLevel": 2,
+      "description": "Comprehensive healthcare solutions."
+    },
+    {
+      "name": "Travel Tracks",
+      "address": "987 Explorer Lane, Journeyville",
+      "phone": "678-901-2345",
+      "website": "https://www.traveltracks.com",
+      "image": "travel_tracks.png",
+      "membershipLevel": 1,
+      "description": "Tailored travel experiences around the globe."
+    },
+    {
+      "name": "Gourmet Goodies",
+      "address": "159 Flavor Avenue, Foodtown",
+      "phone": "789-012-3456",
+      "website": "https://www.gourmetgoodies.com",
+      "image": "gourmet_goodies.png",
+      "membershipLevel": 3,
+      "description": "Premium gourmet food products."
+    }
+  ];
