@@ -12,6 +12,9 @@ span{
 	font-size: 2rem;
 	font-weight: 700;
 }
+.hero_image{
+	width: 100%;
+}
 nav{
 	background-color: #ACC8E5;
 	display: flex;
