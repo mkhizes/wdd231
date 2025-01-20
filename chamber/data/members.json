@@ -1,5 +1,5 @@
 
-const members:[
+ const members=[
     {
       "name": "Tech Innovators",
       "address": "123 Innovation Drive, Tech City",
@@ -63,4 +63,4 @@ const members:[
       "membershipLevel": 3,
       "description": "Premium gourmet food products."
     }
-  ];
+  ]
