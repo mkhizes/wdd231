@@ -65,9 +65,10 @@ ul.menuLinks.open{
 }
 .information{
 	display: flex;
-	justify-content: space-between;
+	justify-content:space-evenly;
 	align-items: stretch;
 	box-sizing:content-box;
+	background-color: #ACC8E5;
 }
 #businesscard{
 	display: flex;
