@@ -1,4 +1,4 @@
-// Fetch and display member information using fetch, async/await.
+
 async function fetchMembers() {
 	try {
 	  const response = await fetch('./data/members.json');
@@ -9,10 +9,10 @@ async function fetchMembers() {
 	}
   }
   
-  // Function to display members.
+  
   function displayMembers(members, viewType) {
 	const container = document.getElementById('members-container');
-	container.innerHTML = ''; // Clear existing content
+	container.innerHTML = ''; 
   
 	members.forEach((member) => {
 	  const memberCard = document.createElement('div');
@@ -31,21 +31,20 @@ async function fetchMembers() {
 	});
   }
   
-  // Toggle between grid and list views.
+  
   function toggleView(viewType) {
 	fetchMembers().then((members) => {
 	  displayMembers(members, viewType);
 	});
   }
   
-  // Event listeners for toggling views.
+
   document.getElementById('toggle-grid').addEventListener('click', () => toggleView('grid'));
   document.getElementById('toggle-list').addEventListener('click', () => toggleView('list'));
   
-  // Initialize the page.
+  
   fetchMembers();
   
-// Display the copyright year and last modification date in the footer.
 function displayFooterInfo() {
 	const footer = document.getElementById('footer');
 	const currentYear = new Date().getFullYear();
