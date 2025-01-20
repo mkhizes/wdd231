@@ -35,7 +35,7 @@ nav{
 	align-items: flex-start;
 }
 #myButton::before{
-	content: "\2630";
+	content: "";
 }
 #myButton{
 	font-size: 2rem;
@@ -114,8 +114,8 @@ button{
 	margin: 5px;
   	font-size: 16px;
   	cursor: pointer;
-	background-color: #007BFF;
-  	color: #fff;
+	background-color: #bbb;
+  	color: #007bff;
 	}
 	.viewtoggle{
 		justify-content:center;
