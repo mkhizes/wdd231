@@ -123,7 +123,7 @@ nav ul li.current-menu-item a {
     flex-wrap: wrap;
 }
 .spotlight {
-    background: #34495e;
+    background: #d2d7dc;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
