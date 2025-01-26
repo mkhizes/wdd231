@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ethekwini Chamber home page.">
@@ -14,44 +14,69 @@
     <meta name="twitter:image" content="https://mkhizes.github.io/wdd231/chamber/images/rsz_1moses-mabhida-stadium-hero.webp">
     <meta name="twitter:card" content="summary_large_image">
     <title>Ethekwini Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/weather_base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     
-    
-</head>
-<body>
-    <header>
+    </head>
+    <body>
+        <header>
         <img id="logo" src="images/chamber_logo1.webp" alt="logo" width="44" height="44">
           <h1><span>Ethekwini Chamber of Commerce</span></h1>
         <button id="myButton">&#9776;</button>
-    </header>
-    <nav>
-    <ul class="menuLinks">
-        <li><a href="directory.html"   title="Home">Home</a></li>
-        <li class="current-menu-item"><a href="Directory" title="Directory">Directory</a></li>
-        <li><a href="Join" title="Join">Join</a></li>
-        <li><a href="Discover" title="Discover">Discover</a></li>
-    </ul>
-    </nav>
-    <main>
-        <img class="hero_image" src="images/rsz_1moses-mabhida-stadium-hero.webp" alt="Durban Moses Mabhida Stadium" width="1000" height="600">
-        <h2>Home</h2>
-        <div>
-        <div class="card">
-            <h2 class="town">Durban South Coast</h2>
+        </header>
+         <nav>
+          <ul class="menuLinks">
+           <li><a href="index.html"   title="Home">Home</a></li>
+           <li class="current-menu-item"><a href="Directory" title="Directory">Directory</a></li>
+           <li><a href="Join" title="Join">Join</a></li>
+           <li><a href="Discover" title="Discover">Discover</a></li>
+          </ul>
+         </nav>
+        <main>
+         <img class="hero_image" src="images/rsz_1moses-mabhida-stadium-hero.webp" alt="Durban Moses Mabhida Stadium" width="1000" height="600">
+         <div>
+         <h1>Welcome to our Chamber of Commerce</h1>
+        </div>
+                 
+         <div class="section">
+            <h2>Current-Events</h2>
+            <p>Stay informed with our latest events happening in our beautiful city Durban</p>
+         </div>
+
+         <div class="section">
+            <h2>Current Weather</h2>
+            <p>Current weather updates for our region</p>
             <img id="graphic" src="" alt="">
             <p id="description"></p>
             <p id="temparature"></p>
-            </div>
+         </div>
          
-    </main>
-    <footer>
-     <p>443592, Esilengeni,<br> Hlanzeni Hall,<br>Danganya Area 8 <br>Umkhomazi <br>4170 <br></p><img src="images/facebook.png" alt="facebook" width="35" height="35"><img src="images/instagram(1).png" alt="instagram" width="35" height="35"><img src="images/twitter.png" alt="twitter" width="35" height="38"> <p>WDD231 Class Project <br>Sizwe Mkhize <br> &copy;<span id="currentYear"></span> Ethekwini Chamber of Commerce <br>Last Modification: <span id="lastModified"></span></p>   
-    </footer>
-    <script src="scripts/directory.js" defer></script>  
-</body>
+        <div class="section">
+            <h2>Company Spotlights</h2>
+            <div class="spotlight-container">
+                <div class="spotlight">
+                    <h3>Company 1</h3>
+                    <p>Leading in innovation and customer service.</p>
+                </div>
+                <div class="spotlight">
+                    <h3>Company 2</h3>
+                    <p>Providing excellent products to our community.</p>
+                </div>
+                <div class="spotlight">
+                    <h3>Company 3</h3>
+                    <p>A trusted name in the industry.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        </main>
+        <footer>
+         <p>443592, Esilengeni,<br> Hlanzeni Hall,<br>Danganya Area 8 <br>Umkhomazi <br>4170 <br></p><a href=""><img src="images/facebook.png" alt="facebook" width="35" height="35"></a><a href=""><img src="images/instagram(1).png" alt="instagram" width="35" height="35"></a><a href=""><img src="images/twitter.png" alt="twitter" width="35" height="38"></a> <p>WDD231 Class Project <br>Sizwe Mkhize, &copy;<span id="currentYear"></span> Ethekwini Chamber of Commerce <br>Last Modification: <span id="lastModified"></span></p>   
+        </footer>
+       <script src="scripts/weather.js" defer></script>  
+    </body>
 </html>

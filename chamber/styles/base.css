@@ -79,6 +79,7 @@ ul.menuLinks.open{
 	justify-content:space-evenly;
 	align-items: stretch;
 	box-sizing:content-box;
+	/*background-color: #a5bdd6;*/
 	/*background-color: #ACC8E5;*/
 }
 .events-item{
@@ -86,6 +87,7 @@ ul.menuLinks.open{
 	box-sizing: border-box;
 	background-color:#ACC8E5;
 	border-radius: 10px;
+	box-shadow:#555;
 }
 
 #current-weather-item{
@@ -93,6 +95,7 @@ ul.menuLinks.open{
 	box-sizing: border-box;
 	background-color: #ACC8E5;
 	border-radius: 10px;
+	box-shadow: #555;
 	
 }
 #forecast-item{
@@ -100,6 +103,7 @@ ul.menuLinks.open{
 	box-sizing: border-box;
 	background-color:  #ACC8E5;
 	border-radius: 10px;
+	box-shadow: #555;
 }
 
 #businesscard{
@@ -119,7 +123,7 @@ button{
 	margin: 5px;
   	font-size: 16px;
   	cursor: pointer;
-	background-color: #a5bdd6;
+	background-color: #2d5682;
   	color:black;
 	}
 	.viewtoggle{
@@ -128,13 +132,15 @@ button{
   		text-align: center;
 	}
 	button:hover {
-		background-color: #0056b3;
+		background-color: #595b5c;
 	  }
 	  .card{
 		border: 1px solid #5d6f67;
 		background-color: #f6f0da;
 		border-radius: 10px;
 		text-align: center;
+		width: max-content;
+		height: max-content;
 	  }
 	  .card h2{
 		color: #3a5250;
@@ -150,6 +156,10 @@ button{
 		color:#537279;
 		margin: .3 rem 0;
 	  }
+	  .cards-container{
+		display: flex;
+		justify-content: space-around;
+	  }
 	  
 	  /* Member Cards */
 	  #members-container {
@@ -162,7 +172,7 @@ button{
 	  /* Grid View */
 	  .member-card.grid-view {
 		background: #fff;
-		border: 1px solid #ddd;
+		border: 1px solid #bd7878;
 		border-radius: 5px;
 		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 		margin: 15px;

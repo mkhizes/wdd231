@@ -1,0 +1,172 @@
+/* Base CSS - styles/base.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items:end;
+    justify-content: space-between;
+    background: #bbb;
+    color: black;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+#logo {
+    width: 44px;
+    height: 44px;
+}
+
+h1 span {
+    font-size: 1.8rem;
+}
+
+#myButton {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: end;
+    background: #34495e;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(237, 234, 234);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li.current-menu-item a {
+    border-bottom: 2px solid #e74c3c;
+}
+
+.hero_image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/*.events-card, .weather-card, .forecast-card {
+    background: rgb(171, 171, 220);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+
+/*.hero {
+    background: url('images/rsz_1moses-mabhida-stadium-hero.webp') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}*/
+.hero h1 {
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.content {
+    padding: 20px;
+}
+.cta {
+    text-align: center;
+    margin: 20px 0;
+}
+.cta a {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #34495e;
+    border-radius: 10px;
+}
+.spotlight-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.spotlight {
+    background: #34495e;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 30%;
+    text-align: center;
+}
+
+footer {
+    background: #bbb;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer img {
+    margin: 0 10px;
+}
+
+
+
+/* Responsive Design - styles/large.css */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .events-card, .weather-card, .forecast-card {
+        width: 90%;
+    }
+}
