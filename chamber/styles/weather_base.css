@@ -31,7 +31,7 @@ h1 span {
     background: none;
     border: none;
     font-size: 2rem;
-    color: white;
+    color: rgb(4, 0, 0);
     cursor: pointer;
 }
 
@@ -41,7 +41,8 @@ nav ul {
     display: flex;
     justify-content:space-evenly;
     align-items: end;
-    background: #34495e;
+    background: #7ea1c4;
+    height: 60px;
     margin: 0;
 }
 
@@ -50,9 +51,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(237, 234, 234);
+    color: rgb(1, 0, 0);
     text-decoration: none;
     font-weight: bold;
+    font-size: x-large;
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: .3rem 0;
 }
 
 nav ul li.current-menu-item a {
@@ -71,16 +77,6 @@ nav ul li.current-menu-item a {
     flex-wrap: wrap;
     padding: 20px;
 }
-
-/*.events-card, .weather-card, .forecast-card {
-    background: rgb(171, 171, 220);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    text-align: center;
-}
-
 
 /*.hero {
     background: url('images/rsz_1moses-mabhida-stadium-hero.webp') no-repeat center center/cover;
