@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animated-card {
+      animation: fadeIn 1s ease-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="container mx-auto">
+    <!-- Form Section -->
+    <form 
+      class="bg-white p-6 rounded-lg shadow-md space-y-4 mb-6" 
+      method="get" 
+      action="thankyou.html"
+    >
+      <h2 class="text-2xl font-bold mb-4">Membership Application Form</h2>
+
+      <label class="block" title="Enter your first name">
+        First Name:
+        <input 
+          type="text" 
+          name="first_name" 
+          required 
+          autocomplete="given-name" 
+          class="border p-2 w-full" 
+          title="Enter your first name"
+        />
+      </label>
+
+      <label class="block" title="Enter your last name">
+        Last Name:
+        <input 
+          type="text" 
+          name="last_name" 
+          required 
+          autocomplete="family-name" 
+          class="border p-2 w-full" 
+          title="Enter your last name"
+        />
+      </label>
+
+      <label class="block" title="Enter your organizational title">
+        Organizational Title:
+        <input 
+          type="text" 
+          name="org_title" 
+          autocomplete="organization-title" 
+          pattern="^[a-zA-Z\-\s]{7,}$" 
+          class="border p-2 w-full" 
+          title="Enter your title using only letters, hyphens, and spaces. Minimum 7 characters."
+        />
+      </label>
+
+      <label class="block" title="Enter your email">
+        Email Address:
+        <input 
+          type="email" 
+          name="email" 
+          required 
+          autocomplete="email" 
+          placeholder="example@domain.com" 
+          class="border p-2 w-full" 
+          title="Enter your email"
+        />
+      </label>
+
+      <label class="block" title="Enter your mobile phone number">
+        Mobile Phone Number:
+        <input 
+          type="tel" 
+          name="phone" 
+          required 
+          autocomplete="tel" 
+          class="border p-2 w-full" 
+          title="Enter your mobile phone number"
+        />
+      </label>
+
+      <label class="block" title="Enter your organization's name">
+        Organization Name:
+        <input 
+          type="text" 
+          name="org_name" 
+          required 
+          autocomplete="organization" 
+          class="border p-2 w-full" 
+          title="Enter your organization's name"
+        />
+      </label>
+
+      <label class="block" title="Select membership level">
+        Membership Level:
+        <select name="membership" class="border p-2 w-full" title="Select membership level">
+          <option value="np">NP Membership (No fee)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label class="block" title="Describe your organization">
+        Organization Description:
+        <textarea 
+          name="description" 
+          class="border p-2 w-full" 
+          title="Describe your organization"
+        ></textarea>
+      </label>
+
+      <input 
+        type="hidden" 
+        name="timestamp" 
+        id="timestamp" 
+      />
+
+      <input 
+        type="submit" 
+        value="Submit Application" 
+        class="bg-blue-500 text-white py-2 px-4 rounded cursor-pointer"
+      />
+    </form>
+
+    <!-- Membership Cards Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- Card Template -->
+      <div class="bg-white p-4 rounded-lg shadow-md animated-card">
+        <h3 class="text-lg font-bold">NP Membership</h3>
+        <p>No fee for non-profits.</p>
+        <button class="text-blue-500 underline" onclick="showModal('modal-np')">Learn More</button>
+      </div>
+      
+      <div class="bg-white p-4 rounded-lg shadow-md animated-card">
+        <h3 class="text-lg font-bold">Bronze Membership</h3>
+        <p>Affordable access to events.</p>
+        <button class="text-blue-500 underline" onclick="showModal('modal-bronze')">Learn More</button>
+      </div>
+      
+      <div class="bg-white p-4 rounded-lg shadow-md animated-card">
+        <h3 class="text-lg font-bold">Silver Membership</h3>
+        <p>Event discounts and training.</p>
+        <button class="text-blue-500 underline" onclick="showModal('modal-silver')">Learn More</button>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-md animated-card">
+        <h3 class="text-lg font-bold">Gold Membership</h3>
+        <p>Premium benefits and advertising.</p>
+        <button class="text-blue-500 underline" onclick="showModal('modal-gold')">Learn More</button>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal-np" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+      <div class="bg-white p-6 rounded-lg">
+        <h3 class="text-lg font-bold">NP Membership Benefits</h3>
+        <p>Details about NP membership...</p>
+        <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded" onclick="hideModal('modal-np')">Close</button>
+      </div>
+    </div>
+
+    <!-- Repeat for other modals -->
+  </div>
+
+  <script>
+    // Set the current timestamp
+    document.getElementById('timestamp').value = new Date().toISOString();
+
+    // Show modal
+    function showModal(id) {
+      document.getElementById(id).classList.remove('hidden');
+    }
+
+    // Hide modal
+    function hideModal(id) {
+      document.getElementById(id).classList.add('hidden');
+    }
+  </script>
+</body>
+</html>

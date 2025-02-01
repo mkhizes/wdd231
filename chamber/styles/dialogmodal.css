@@ -1,0 +1,28 @@
+*body{
+    background-color: #e02020;
+    color: rgb(94, 197, 200);
+}
+#openButton1{
+    background-color: aqua;
+}
+
+#openButton2{
+    background-color:brown;
+}
+#openButton3{
+    background-color:grey;
+}
+
+#openButton4{
+    background-color:rgb(218, 187, 12);
+}
+
+#dialogBox{
+    background-color: rgb(142, 142, 210);
+}
+#closeButton{
+    background-color: blueviolet;
+}
+::backdrop{
+    background-color:burlywood;
+}

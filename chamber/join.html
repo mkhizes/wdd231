@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ethekwini Chamber home page.">
+    <meta name="author" content="Sizwe Aquill Xolani Mkhize">
+    <meta property="og:title" content="Ethekwini Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mkhizes.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://mkhizes.github.io/wdd231/chamber/images/rsz_1moses-mabhida-stadium-hero.webp">
+    <meta name="twitter:title" content="Ethekwini Chamber of Commerce">
+    <meta name="twitter:description" content=" Website for businesses to network and contribute in the community.">
+    <meta name="twitter:image" content="https://mkhizes.github.io/wdd231/chamber/images/rsz_1moses-mabhida-stadium-hero.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Ethekwini Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <header>
+        <img id="logo" src="images/chamber_logo1.webp" alt="logo" width="44" height="44" loading="lazy">
+          <h1><span>Ethekwini Chamber of Commerce</span></h1>
+        <button id="myButton">&#9776;</button>
+        </header>
+         <nav>
+          <ul class="menuLinks">
+           <li><a href="index.html"   title="Home">Home</a></li>
+           <li class="current-menu-item"><a href="directory.html" title="Directory">Directory</a></li>
+           <li><a href="join.html" title="Join">Join</a></li>
+           <li><a href="discover.html" title="Discover">Discover</a></li>
+           <li><a href="aboutus.html" title="About Us" class="active">About Us</a></li>
+          </ul>
+         </nav>
+         <h2>Join the Ethekwini Chamber of Commerce</h2>
+            
+        <main>
+        <!-- Form Section -->
+          <div class="form-container">
+                  <form 
+                    class="business-form" 
+                    method="get" 
+                    action="thankyou.html"
+                  >
+                    <h2>Membership Application Form</h2>
+              
+                    <label class="block" title="Enter your first name">
+                      First Name:
+                      <input 
+                        type="text" 
+                        name="first_name" 
+                        required 
+                        autocomplete="given-name" 
+                        class="fname" 
+                        title="Enter your first name"
+                      />
+                    </label>
+              
+                    <label class="block" title="Enter your last name">
+                      Last Name:
+                      <input 
+                        type="text" 
+                        name="last_name" 
+                        required 
+                        autocomplete="family-name" 
+                        class="lname" 
+                        title="Enter your last name"
+                      />
+                    </label>
+              
+                    <label class="block" title="Enter your organizational title">
+                      Organizational Title:
+                      <input 
+                        type="text" 
+                        name="org_title" 
+                        autocomplete="organization-title" 
+                        pattern="^[a-zA-Z\-\s]{7,}$" 
+                        class="org_title" 
+                        title="Enter your title using only letters, hyphens, and spaces. Minimum 7 characters."
+                      />
+                    </label>
+              
+                    <label class="block" title="Enter your email">
+                      Email Address:
+                      <input 
+                        type="email" 
+                        name="email" 
+                        required 
+                        autocomplete="email" 
+                        placeholder="example@domain.com" 
+                        class="email" 
+                        title="Enter your email"
+                      />
+                    </label>
+              
+                    <label class="block" title="Enter your mobile phone number">
+                      Mobile Phone Number:
+                      <input 
+                        type="tel" 
+                        name="phone" 
+                        required 
+                        autocomplete="tel" 
+                        class="telephone" 
+                        title="Enter your mobile phone number"
+                      />
+                    </label>
+              
+                    <label class="block" title="Enter your organization's name">
+                      Organization Name:
+                      <input 
+                        type="text" 
+                        name="org_name" 
+                        required 
+                        autocomplete="organization" 
+                        class="org_name" 
+                        title="Enter your organization's name"
+                      />
+                    </label>
+              
+                    <label class="block" title="Select membership level">
+                      Membership Level:
+                      <select name="membership" class="membership" title="Select membership level">
+                        <option value="np">NP Membership (No fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                      </select>
+                    </label>
+              
+                    <label class="block" title="Describe your organization">
+                      Organization Description:
+                      <textarea 
+                        name="description" 
+                        class="org_description" 
+                        title="Describe your organization"
+                      ></textarea>
+                    </label>
+              
+                    <input 
+                      type="hidden" 
+                      name="timestamp" 
+                      id="timestamp" 
+                    />
+              
+                    <input 
+                      type="submit" 
+                      value="Submit Application" 
+                    
+                    />
+                  </form>
+                </div>
+                <div class="membership-container">
+                  <div id="container-front">
+                  <h2 id="levels">Membership Levels</h2>
+                  
+                    <div class="membership-np"> 
+                      <h3 id="np">NP Membership</h3>
+                      <p></p>
+                      <button id="openButton1" class="modal-np" onclick="showModal('modal-np')">Learn More</button>
+                    </div>
+                    
+                    <div class="membership-bronze">
+                      <h3 id="bronze">Bronze Membership</h3>
+                      <p></p>
+                      <button id="openButton2" class="modal-bronze" onclick="showModal('modal-bronze')">Learn More</button>
+                    </div>
+                    
+                    <div class="membership-silver">
+                      <h3 id="silver">Silver Membership</h3>
+                      <p></p>
+                      <button id="openButton3" class="modal-silver" onclick="showModal('modal-silver')">Learn More</button>
+                    </div>
+              
+                    <div class="membership-gold">
+                      <h3 id="gold">Gold Membership</h3>
+                      <p></p>
+                      <button id="openButton4" class="modal-gold" onclick="showModal('modal-gold')">Learn More</button>
+                    </div>
+                  </div>
+                  </div>
+                  <dialog id="dialogBox">
+                    <div></div>
+                <button id="closeButton">Close</button>    
+                </dialog>
+                  <!-- Modal Template -->
+        </main>
+        <footer>
+         <p>443592, Esilengeni,<br> Hlanzeni Hall,<br>Danganya Area 8 <br>Umkhomazi <br>4170 <br></p><a href="ethekwini chamber of commerce"><img src="images/facebook.png" alt="facebook" width="40" height="40" loading="lazy"></a><a href="@ethekwinichamberofcommerce"><img src="images/instagram(1).png" alt="instagram" width="40" height="40" loading="lazy"></a><a href=""><img src="images/twitter.png" alt="twitter" width="40" height="40" loading="lazy"></a> <p>WDD231 Class Project-Sizwe A.X. Mkhize, <br> &copy;<span id="currentYear"></span> Ethekwini Chamber of Commerce <br>Last Modification: <span id="lastModified"></span></p>   
+        </footer>
+       <script src="scripts/join.js" ></script> 
+    </body>
+</html>
