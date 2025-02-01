@@ -1,16 +1,96 @@
 body{
     margin: 0;
   	padding: 0;
-  	background-color: #7ea1c4;
+  	background-color: #e6e9eb;
     font-family: "Roboto", serif;
     font-weight: 400;
     font-style: normal;
     color: black;
 }
 header,footer{
-    background-color: #bbb;
+    background-color: #bbbbbb;
     padding: 1rem;
 }
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items:end;
+    justify-content: space-between;
+    color: black;
+    padding: 20px;
+    font-weight: bolder;
+  }
+  #logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  #myButton {
+    content: "";
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: rgb(8, 1, 1);
+    cursor: pointer;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: end;
+    background: #7ea1c4;
+    height: 60px;
+    margin: 0;
+    box-shadow: #4CAF50;
+  }
+    
+  #myButton.open::before{
+    content: "X";
+    }
+
+    ul.menuLinks.open{
+      display: block;
+    }
+
+    .active::before { 
+      content: "📍";  /* just a wayfinding symbol for the user */
+    }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: rgb(8, 1, 1);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: .3rem 0;
+    border:2px solid #bbbbbb;
+  }
+  
+  nav ul li.current-menu-item a {
+    border-bottom: 2px solid #9ba19b;
+ }
+ main{
+    /*display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #e6e9eb;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    /*max-width: 800px;*/
+    margin-top: 2rem;
+ }
+
 p{
     font-size: 1.5rem;
     text-align: center;
@@ -18,3 +98,20 @@ p{
 h1{
     text-align: center;
 }
+footer {
+    background: #bbbbbb;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    }
+  
+  footer img {
+    margin: 0 10px;
+  }
+  footer p{
+    font-size: 1rem;
+  }
