@@ -79,8 +79,6 @@ ul.menuLinks.open{
 	justify-content:space-evenly;
 	align-items: stretch;
 	box-sizing:content-box;
-	/*background-color: #a5bdd6;*/
-	/*background-color: #ACC8E5;*/
 }
 .events-item{
 	border: 10px 20px;
