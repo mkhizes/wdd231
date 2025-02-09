@@ -1,0 +1,79 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#b6c1cb;
+        }
+        header, footer {
+            display: flex;
+            justify-content:space-evenly;
+            align-items: end;
+            background-color: #6c6a6a;
+            color: black;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: #7ea1c4;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        main {
+            padding: 20px;
+        }
+        .discover-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-areas:
+            "name"
+            "photo"
+            "description"
+            "address";
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: rgb(187, 186, 186);
+            padding: 15px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .cardfigureimg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .cardtitle {
+            font-style: normal;
+            color: black;
+        }
+        .cardaddress {
+            font-style: normal;
+            color: gray;
+        }
+        .cardButton {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .cardButton:hover {
+            background: #0056b3;
+        }
+
