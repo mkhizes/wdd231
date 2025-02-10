@@ -1,5 +1,5 @@
 @media only Screen and (min-width:64rem){
-    #allplaces {
+    .discover-grid {
         margin: 1rem 8px;
         border: 1px solid #999;
         background-color: #eee;
@@ -25,8 +25,8 @@
         text-align: center;
     }
     .card figure img {
-        max-width: 100%;
-        height: auto;
+        width:300px;
+        height: 200px;
         border-radius: 5px;
     }
     .card address {

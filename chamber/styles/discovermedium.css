@@ -1,7 +1,7 @@
 @media only Screen and(min-width:38rem){
     .discover-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns:1fr 1fr;
         gap: 20px;
         padding: 20px;
     }
@@ -13,8 +13,8 @@
         text-align: center;
     }
     .card figure img {
-        max-width: 100%;
-        height: auto;
+        width: 300px;
+        height: 200px;
         border-radius: 5px;
     }
     .card address {

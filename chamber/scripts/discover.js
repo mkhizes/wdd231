@@ -1,30 +1,45 @@
+
 import { places } from "../data/places.mjs";
 console.log(places);
 
 document.addEventListener("DOMContentLoaded", () => {
-   const buttons = document.querySelectorAll(".card button");
-    
-   buttons.forEach(button => {
-       button.addEventListener("click", (event) => {
-           const card = event.target.closest(".card");
-           const title = card.querySelector("h2").textContent;
-           const address = card.querySelector("address").textContent;
-           const description = card.querySelector("p").textContent;
-            
-           display(`Title: ${title}\nAddress: ${address}\nDescription: ${description}`);
-       });
-   });
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const cards = document.querySelectorAll(".card");
+    const showHere = document.querySelector("#allplaces");
 
-    cards.forEach((card, index) => {
-        const button = card.querySelector("button");
-        if (button) {
+    function displayItems(places) {
+        places.forEach((place) => {
+            const thecard = document.createElement("article");
+            thecard.classList.add("card");
+
+            const thephoto = document.createElement("img");
+            thephoto.src = `images/${place.photo_link}`;
+            thephoto.alt = place.name;
+            thephoto.width = 300;
+            thephoto.height = 200;
+
+            const thetitle = document.createElement("h2");
+            thetitle.innerText = place.name;
+
+            const theaddress = document.createElement("address");
+            theaddress.innerText = place.address;
+
+            const thedescription = document.createElement("p");
+            thedescription.innerText = place.description;
+
+            const button = document.createElement("button");
             button.textContent = "Learn More";
-            button.addEventListener("click", function () {
-                alert(`You clicked on card ${index + 1}`);
+            button.addEventListener("click", () => {
+                alert(`Title: ${place.name}\nAddress: ${place.address}\nDescription: ${place.description}`);
             });
-        }
-    });
+
+            thecard.appendChild(thetitle);
+            thecard.appendChild(thephoto);
+            thecard.appendChild(theaddress);
+            thecard.appendChild(thedescription);
+            thecard.appendChild(button);
+
+            showHere.appendChild(thecard);
+        });
+    }
+    
+    displayItems(places);
 });
