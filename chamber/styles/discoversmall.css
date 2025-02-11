@@ -9,7 +9,7 @@
             display: flex;
             justify-content:space-evenly;
             align-items: end;
-            background-color: #6c6a6a;
+            background-color: #c2c1c1;
             color: black;
             text-align: center;
             padding: 1rem;
@@ -30,6 +30,9 @@
             padding: 10px;
             display: block;
         }
+        .active::before { 
+            content: "📍";  /* just a wayfinding symbol for the user */
+          }
         main {
             padding: 20px;
         }
@@ -44,36 +47,55 @@
             gap: 20px;
             padding: 20px;
         }
+        
         .card {
-            background: rgb(187, 186, 186);
+            background:#6386a8;
             padding: 15px;
             box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-            border-radius: 10px;
+            border-radius: 15px;
             text-align: center;
+            overflow: hidden;
         }
-        .cardfigureimg {
+        .card figure img {
             width: 300px;
             height: 200px;
             border-radius: 5px;
-        }
-        .cardtitle {
+            object-fit: cover;
+            
+            }
+        .card address {
             font-style: normal;
-            color: black;
+            color: rgb(17, 16, 16);
+            box-shadow: #007BFF;
         }
-        .cardaddress {
-            font-style: normal;
-            color: gray;
-        }
-        .cardButton {
+        .card button {
             background: #007BFF;
-            color: white;
+            color: rgb(67, 66, 66);
             border: none;
             padding: 10px;
             cursor: pointer;
             border-radius: 5px;
             margin-top: 10px;
         }
-        .cardButton:hover {
-            background: #0056b3;
+        .card button:hover {
+            background: red;
         }
-
+        p {
+            margin: 1rem;
+        }
+        
+        .label {
+            font-family: Arial, sans-serif;
+            font-weight: 700;
+        }
+        
+        #visits {
+            color: navy;
+            font-weight: bolder;
+            font-size: larger;
+        }
+        
+        .today {
+            color: tomato;
+        }
+        .hover:hover {box-shadow: 0 0 50px #333;}        

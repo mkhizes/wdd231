@@ -67,6 +67,9 @@ nav ul li a {
 nav ul li.current-menu-item a {
     border-bottom: 2px solid #e74c3c;
 }
+.active::before { 
+	content: "📍";  /* just a wayfinding symbol for the user */
+  }
 
 .hero_image {
     width: 100%;

@@ -43,3 +43,11 @@ document.addEventListener("DOMContentLoaded", () => {
     
     displayItems(places);
 });
+function updateTimestamp() {
+    let now = new Date();
+    let timestamp = now.toLocaleString(); 
+    document.getElementById("timestamp").textContent = timestamp;
+}
+
+updateTimestamp(); 
+setInterval(updateTimestamp, 1000);
