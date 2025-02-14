@@ -62,7 +62,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background: url('images/pigsthreemonths')cover;
+    background: url('images/threemonths.webp') no-repeat center center/cover;
     text-align: center;
     color: black;
     padding: 60px 20px;

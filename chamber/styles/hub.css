@@ -68,7 +68,7 @@ img{
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background: url('images/pigs.jpg')cover repeat;
+    background: url('images/pigs.webp') no-repeat center center/cover;
     color: white;
 }
 
