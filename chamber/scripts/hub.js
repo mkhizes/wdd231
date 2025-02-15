@@ -1,6 +1,5 @@
  scripts/hub.js
 
-
 import { fetchPigData } from "./pigData.js";
 
 
@@ -34,7 +33,6 @@ function displayPigTips(pigTips) {
     });
     setupEventListeners();
 }
-
 
 function setupEventListeners() {
     document.querySelectorAll(".view-details").forEach(button => {
@@ -77,6 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadPigTips();
     saveDataToLocal();
 });
+
 function updateTimestamp() {
     let now = new Date();
     let timestamp = now.toLocaleString(); 
@@ -85,3 +84,25 @@ function updateTimestamp() {
 
 updateTimestamp(); 
 setInterval(updateTimestamp, 1000);
+
+function showModal(contentId) {
+    let modalText = {
+        'modal-getting': 'Learn about land selection, shelter, and fencing.',
+        'modal-feeding': 'Understand pig diets, growth charts, and supplements.',
+        'modal-health': 'Prevent and manage common pig diseases.',
+        'modal-breeding': 'Best practices for piglet care and farm optimization.',
+        'modal-market': 'Sales strategies, pricing, and business tips.'
+    };
+    document.getElementById('modal-text').innerText = modalText[contentId];
+    document.getElementById('modal').style.display = 'block';
+}
+
+document.querySelector(".close").addEventListener("click", function() {
+    document.getElementById("modal").style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+    if (event.target === document.getElementById("modal")) {
+        document.getElementById("modal").style.display = "none";
+    }
+});

@@ -11,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header and Navigation */
 header {
     background: #004d00;
     color: white;
@@ -50,7 +49,7 @@ nav {
 }
 
 .actives::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
+	content: "📍";  
   }
 
 .menu-toggle {
@@ -68,7 +67,7 @@ img{
     border-radius: 15px;
 }
 
-/* Hero Section */
+
 .hero {
     text-align: center;
     padding: 50px 20px;
@@ -98,7 +97,7 @@ img{
     background: #ff9900;
 }
 
-/* Categories Section */
+
 .categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -119,7 +118,7 @@ img{
     color: #004d00;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     background: #004d00;
@@ -134,7 +133,7 @@ footer a {
     font-weight: bold;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -158,4 +157,28 @@ footer a {
     .nav-links li {
         margin: 10px 0;
     }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+}
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
 }
