@@ -7,8 +7,8 @@
     <meta name="author" content="Smart Piggery Hub Team">
     <meta property="og:title" content="Smart Piggery Hub">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourwebsite.com">
-    <meta property="og:image" content="https://yourwebsite.com/images/pig-farm.jpg">
+    <meta property="og:url" content="https://smarthub.html">
+    <meta property="og:image" content="https://mkhizes.github.io/smart-piggery-hub/images/pigs.webp">
     <title>Smart Piggery Hub</title>
     <link rel="stylesheet" href="styles/hub.css">
     <link rel="icon" href="favicon.ico">
@@ -37,28 +37,33 @@
         <div class="category">
             <h2>Getting Started</h2>
             <p>Learn about land selection, shelter, and fencing.</p>
-            <button class="openButton1" onclick="showModal('modal-getting')">Learn More</button>
+            <button id="openButton1" onclick="showModal('modal-getting')">Learn More</button>
         </div>
         <div class="category">
             <h2>Feeding & Nutrition</h2>
             <p>Understand pig diets, growth charts, and supplements.</p>
-            <button class="openButton2" onclick="showModal('modal-feeding')">Learn More</button>
+            <button id="openButton2" onclick="showModal('modal-feeding')">Learn More</button>
         </div>
         <div class="category">
             <h2>Health & Disease</h2>
             <p>Prevent and manage common pig diseases.</p>
-            <button class="openButton3" onclick="showModal('modal-health')">Learn More</button>
+            <button id="openButton3" onclick="showModal('modal-health')">Learn More</button>
         </div>
         <div class="category">
             <h2>Breeding & Growth</h2>
             <p>Best practices for piglet care and farm optimization.</p>
-            <button class="openButton4" onclick="showModal('modal-breeding')">Learn More</button>
+            <button id="openButton4" onclick="showModal('modal-breeding')">Learn More</button>
         </div>
         <div class="category">
             <h2>Market & Profitability</h2>
             <p>Sales strategies, pricing, and business tips.</p>
-            <button class="openButton5" onclick="showModal('modal-market')">Learn More</button>
+            <button id="openButton5" onclick="showModal('modal-market')">Learn More</button>
         </div>
+        <dialog id="dialogBox">
+            <div></div>
+            <button id="closeButton">Close</button>    
+            </dialog>
+        
     </section>
     <p>Current Timestamp: <span id="timestamp"></span></p>
     <footer>

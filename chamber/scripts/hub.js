@@ -1,6 +1,6 @@
  scripts/hub.js
 
-import { fetchPigData } from "./pigData.js";
+import { fetchPigData } from "../data/pigdata.mjs";
 
 
 document.querySelector(".menu-toggle").addEventListener("click", () => {
@@ -84,6 +84,7 @@ function updateTimestamp() {
 
 updateTimestamp(); 
 setInterval(updateTimestamp, 1000);
+
 
 function showModal(contentId) {
     let modalText = {
